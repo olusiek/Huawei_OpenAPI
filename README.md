@@ -1,2 +1,2 @@
 # Huawei_OpenAPI
-An Huawei OpenAPI code for PV Inverter
+A Huawei OpenAPI code for PV Inverter
