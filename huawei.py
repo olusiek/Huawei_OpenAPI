@@ -288,9 +288,9 @@ def influxDB_update(influxdb_url,influxDB_port,influxDB_name,data,inverterID,Wha
     #PV 24 iterations should be here - next version will do that using loop - it is not needed for current stage
     if WhatToLog["pv1"] == "Yes":
         if payload_values:
-            payload_values = payload_values + ",Volts=" + str(round(data['pv1_u'])) + ",Amps=" + str(round(data['pv1_i'])) + "Watts=" + str(round(data['pv1_u'] * data['pv1_i']))
+            payload_values = payload_values + ",Volts=" + str(round(data['pv1_u'])) + ",Amps=" + str(round(data['pv1_i'])) + ",Watts=" + str(round(data['pv1_u'] * data['pv1_i']))
         else:
-            payload_values = payload_values + "Volts=" + str(round(data['pv1_u'])) + ",Amps=" + str(round(data['pv1_i'])) + "Watts=" + str(round(data['pv1_u'] * data['pv1_i']))
+            payload_values = payload_values + "Volts=" + str(round(data['pv1_u'])) + ",Amps=" + str(round(data['pv1_i'])) + ",Watts=" + str(round(data['pv1_u'] * data['pv1_i']))
         payload_keys = payload_keys + ",pv=1"
 
 
