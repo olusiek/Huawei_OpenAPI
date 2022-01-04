@@ -5,15 +5,13 @@ import configparser # lib to get config data from file
 
 
 # defined variables
-API_URL = "intl.fusionsolar.huawei.com"
-
 config = configparser.RawConfigParser()  
 config.read('/Users/paolo/huawei/config.cfg') #location of configuration file
 
 FS_API = dict(config.items('fusionsolar API')) #name of the section within configuration file
 WhatToLog = dict(config.items('what to log'))
 InfluxDB = dict(config.items('influxDB'))
-#API_URL = FS_API['URL']
+API_URL = FS_API['url']
 
 def get_token(username,password):
 
