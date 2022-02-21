@@ -360,7 +360,6 @@ headers = {
 conn2.request("POST", "/thirdData/getStationRealKpi", payload, headers)
 res2 = conn2.getresponse()
 data2 = res2.read()
-#print(res2.status, res2.reason)
 #print(res2.getcode()) #pobranie kodu
 #print('\n')
 #print(type(data2.decode()))
