@@ -109,7 +109,7 @@ def get_currentdata(token,inverterSN):
     conn = http.client.HTTPSConnection(API_URL)
 
     payload = json.dumps({
-    "devIds": "1000000034457107",
+    "devIds": inverterSN,
     "devTypeId": "1"
     })
 
