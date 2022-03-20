@@ -143,13 +143,6 @@ def influxDB_update(influxdb_url,influxDB_port,influxDB_name,data,inverterID,Wha
     #print(WhatToLog)
     
 
-    #Phase1_WATT = round(data["a_i"] * data["a_u"],2)
-    #Phase2_WATT = round(data["b_i"] * data["b_u"],2)
-    #Phase3_WATT = round(data["c_i"] * data["c_u"],2)
-
-    #print("P1:" , Phase1_WATT , "P2:" , Phase2_WATT , "P3:" , Phase3_WATT)
-    #Summary_WATT = round(Phase1_WATT + Phase2_WATT + Phase3_WATT,2)
-
     WATT = {'1' :  {'volts': round(data["a_u"],2), 'amps': round(data["a_i"],2), 'watts': round(data["a_i"] * data["a_u"],2)},
             '2' :  {'volts': round(data["b_u"],2), 'amps': round(data["b_i"],2), 'watts': round(data["b_i"] * data["b_u"],2)},
             '3' :  {'volts': round(data["c_u"],2), 'amps': round(data["c_i"],2), 'watts': round(data["c_i"] * data["c_u"],2)},
