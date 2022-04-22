@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 #OWN SETTING
-local_confic.cfg
+local_config.cfg
