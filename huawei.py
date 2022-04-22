@@ -6,7 +6,7 @@ import configparser # lib to get config data from file
 
 # defined variables
 config = configparser.RawConfigParser()  
-config.read('/Users/paolo/huawei/config.cfg') #location of configuration file
+config.read('/etc/huawei/config.cfg') #location of configuration file
 
 FS_API = dict(config.items('fusionsolar API')) #name of the section within configuration file
 WhatToLog = dict(config.items('what to log'))
