@@ -9,3 +9,5 @@ WORKDIR /
 COPY huawei.py /usr/bin
 
 RUN echo "*/2 * * * *  python3 /usr/bin/huawei.py >> /var/log/syslog 2>&1" >> /etc/crontabs/root
+
+RUN ["/usr/sbin/crond","-b"]
