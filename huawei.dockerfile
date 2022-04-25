@@ -8,4 +8,4 @@ WORKDIR /
  
 COPY huawei.py /usr/bin
 
-RUN echo "*/2 * * * * root python3 /usr/bin/huawei.py >> /var/log/syslog 2>&1" >> /etc/crontab
+RUN echo "*/2 * * * * root python3 /usr/bin/huawei.py >> /var/log/syslog 2>&1" >> /etc/crontabs/root
