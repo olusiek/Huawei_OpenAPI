@@ -132,7 +132,7 @@ def get_currentdata(token,inverterSN):
 def influxDB_update(influxdb_url,influxDB_port,influxDB_name,data,inverterID,WhatToLog):
     #influxdb_url - an URL of the InfluxDB https://host:port/write. Defined in config.cfg
     #influxDB_name - name of InfluxDB. Defined in config.cfg
-    #data - output from get_currentdata(). provides realKPI from an inverter
+    #data - output from get_currentdata(). provides realKPI from an inverter 
     #inverterID - output from get_inverterSN. is a part of influxDB structure
     #WhatToLog - A section from config.cfg where important fields are defined and will be sent to InfluxDB
 
